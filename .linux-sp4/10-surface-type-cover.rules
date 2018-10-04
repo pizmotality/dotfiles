@@ -1,0 +1,4 @@
+# Unload i2c_hid on removing TypeCover
+ACTION=="remove", SUBSYSTEM=="usb", ENV{ID_MODEL}=="Surface_Type_Cover", RUN+="/usr/local/bin/i2c-hid.sh unload"
+# Reload i2c_hid on adding TypeCover
+ACTION=="add", KERNELS=="0003:045E:07E8*", SUBSYSTEMS=="hid", DRIVERS=="hid-multitouch", RUN+="/usr/local/bin/i2c-hid.sh"

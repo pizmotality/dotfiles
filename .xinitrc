@@ -55,5 +55,8 @@ fi
 # set wallpaper
 feh --bg-scale $HOME/.wallpaper.jpg
 
+# enable autorotate
+# $HOME/.linux-sp4/autorotate.sh &
+
 # start herbstluftwm
 exec herbstluftwm
