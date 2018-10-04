@@ -1,0 +1,63 @@
+#define base00 #2d2d2d
+#define base01 #393939
+#define base02 #515151
+#define base03 #747369
+#define base04 #a09f93
+#define base05 #d3d0c8
+#define base06 #e8e6df
+#define base07 #f2f0ec
+#define base08 #f2777a
+#define base09 #f99157
+#define base0A #ffcc66
+#define base0B #99cc99
+#define base0C #90b4d8
+#define base0D #6699cc
+#define base0E #9999cc
+#define base0F #cdea40
+
+*.foreground:   base07
+*.background:   base00
+*.cursorColor:  base07
+
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base07
+
+*.color8:       base06
+*.color9:       base05
+*.color10:      base0F
+*.color11:      base09
+*.color12:      base04
+*.color13:      base03
+*.color14:      base02
+*.color15:      base01
+
+! Font rendering
+Xft.dpi:        96
+Xft.autohint:   0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting:    1
+Xft.antialias:  1
+Xft.rgba:       rgb
+
+! urxvt settings
+URxvt*font:             xft:Menlo:size=11:style=Regular
+URxvt*boldFont:         xft:Menlo:size=11:style=Regular
+! URxvt*font:             -misc-termsyn-medium-*-normal-*-14-*-*-*-*-*-iso8859-1
+! URxvt*boldFont:         -misc-termsyn-medium-*-normal-*-14-*-*-*-*-*-iso8859-1
+URxvt*letterSpace:      -1
+URxvt*scrollBar:        false
+URxvt*depth:            32
+URxvt*background:       rgba:0000/0000/0000/c800
+URxvt*intensityStyles:  false
+
+URxvt*saveLines:    1024
+
+! rofi settings
+rofi*font:          Misc Termsyn 16
