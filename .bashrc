@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export PATH="/usr/local/opt/cross/bin:$PATH"
+PATH="/usr/local/opt/cross/bin:$PATH"
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
