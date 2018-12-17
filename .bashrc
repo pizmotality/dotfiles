@@ -15,6 +15,8 @@ PS1="\[\033[38;5;3m\]┌─[\u@\h] \[\033[38;5;2m\]\W\[\033[38;5;1m\]\$(get_git_
 alias ls='ls --color=auto'
 alias gdf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+stty -ixon
+
 if [ -t 1 ]; then
     bind '"\C-f"':shell-forward-word
     bind '"\C-b"':shell-backward-word
